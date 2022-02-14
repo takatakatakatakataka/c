@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cafe - CONTACT</title>
+    <meta name="description" content="暖かさを大切にするカフェ">
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/jquery-2.1.4.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <div id="contact" class="big-bg">
+        <video src="./img/Cafe - 45887 (video-converter.com).mp4" loop autoplay muted playsinline></video>
+        <header class="page-header wrapper">
+            <h1 class="site-title"><a href="index.html"><img class="logo" src="img/logo.png" alt="カフェ ホーム">カフェ</a>
+            </h1>
+
+            <nav id="navi">
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./concept.html">Concept</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="wrapper">
+                <h2 class="page-title textAnimation">CONTACT</h2>
+            </div>
+        </header>
+
+
+        <section id="location">
+            <div class="wrapper fadein">
+                <div class="location-info">
+                    <h3 class="sub-title">Access </h3>
+                    <dl>
+                        <dt>住所</dt>
+                        <dd>東京都世田谷区22-22</dd>
+                    </dl>
+                    <dl>
+                        <dt>電話</dt>
+                        <dd>03-222-2222</dd>
+                    </dl>
+                    <dl>
+                        <dt>ランチ＆カフェ</dt>
+                        <dd>11:30 〜 15:00（ランチL.O. 14:00）</dd>
+                    </dl>
+                </div><!-- /.location-info -->
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4466958110115!2d139.73464221478676!3d35.66600153841542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b835942e165%3A0xb4897f1f4264c771!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yS5LiB55uu77yU4oiS77yV!5e0!3m2!1sja!2sjp!4v1543466837094"
+                        width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div><!-- /.location-map -->
+            </div><!-- /.wrapper -->
+        </section><!-- /#location -->
+    </div><!-- /#contact -->
+
+    <div class="inquiry big-bg">
+        <div class="wrapper fadein">
+            <form action="form.php" method="post">
+                <div id="radioSection">
+                    <h2 class="sub-title">Contact Us</h2>
+                    <p>お問合せ種別</p>
+
+                    <p class="alert">種別を選択してください。
+                    </p>
+
+                    <label for="radio1" class="radio-btn"><input type="radio" id="radio1" name="radio"
+                            value="Radio1"><span>ご予約</span></label>
+
+                    <label for="radio2" class="radio-btn"><input type="radio" id="radio2" name="radio"
+                            value="Radio2"><span>採用</span></label>
+
+                    <label for="radio3" class="radio-btn"><input type="radio" id="radio3" name="radio"
+                            value="Radio3"><span>その他</span></label>
+                </div><!-- /#radioSection -->
+                <div id="textSection">
+                    <p><label for="text">お名前</label></p>
+                    <p class="alert">お名前を入力してください。</p>
+                    <input type="text" id="text" name="your-email" value="">
+                </div><!-- /#textSection -->
+                <div id="emailSection">
+                    <p><label for="email">メールアドレス
+                        </label></p>
+                    <p class="alert">メールアドレスを入力してください。</p>
+                    <input type="email" id="email" name="text" value="">
+                </div><!-- /#emailSection -->
+                <div id="textareaSection">
+                    <p>
+                        <label for="textarea">お問合せ内容</label>
+                    </p>
+                    <p class="alert">内容を入力してください。</p>
+                    <textarea id="textarea" name="textarea"></textarea>
+                </div><!-- /#textareaSection -->
+                <div id="checkboxSection">
+                    <input type="checkbox" id="checkbox1" name="checkbox" value="Checkbox1">
+                    <label for="checkbox1">プライバシーポリシーに同意します</label>
+                    <p class="alert">プライバシ-ポリシーを確認の上チェックしてください</p>
+                </div><!-- /#checkboxSection -->
+                <input type="submit" value="Submit" id="submitBtn">
+            </form>
+        </div><!-- /.wrapper -->
+    </div><!-- /.inquiry -->
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; cafe</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
